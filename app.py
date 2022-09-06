@@ -43,7 +43,7 @@ def result():
             response = requests.get(BASE + "api/p5/{}".format(item))
         json_data = response.json()
         html_data = json2html.convert(json = json_data)
-        with open("C:\\bin\PCL\\test\\flask_test_web\\templates\\results.html", "w") as result:
+        with open("templates\results.html", "w") as result:
             result.write(html_data)
         return render_template("results.html", title='result')
 
