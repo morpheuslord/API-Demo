@@ -13,3 +13,5 @@ Werkzeug==1.0.1
 json2html
 lxml
 xmltodict
+requests
+pandas
